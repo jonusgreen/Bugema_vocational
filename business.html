@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Business Dept</title>
+    <link rel="stylesheet" href="css styles/style.css">
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          background-color: #f1f1f1;
+          padding: 2px;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        h2{
+          padding-top: 20px;
+          padding-bottom: 20px;
+          text-align: center;
+        }
+        /* Center website */
+        .main {
+          max-width: 10px;
+          margin: auto;
+        }
+        
+        h1 {
+          font-size: 50px;
+          word-break: break-all;
+        }
+        
+        .row {
+          margin: 10px -16px;
+        }
+        
+        /* Add padding BETWEEN each column */
+        .row,
+        .row > .column {
+          padding: 8px;
+        }
+        
+        /* Create three equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 33.33%;
+          display: none; /* Hide all elements by default */
+        }
+        
+        /* Clear floats after rows */ 
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Content */
+        .content {
+          background-color: white;
+          padding: 10px;
+        }
+        
+        /* The "show" class is added to the filtered elements */
+        .show {
+          display: block;
+        }
+        
+        /* Style the buttons */
+        .btn {
+          border: none;
+          outline: none;
+          padding: 12px 16px;
+          background-color: white;
+          cursor: pointer;
+        }
+        
+        .btn:hover {
+          background-color: #ddd;
+        }
+        
+        .btn.active {
+          background-color: #666;
+          color: white;
+        }
+        </style>
+</head>
+<body>
+ <!-- Navgation bar -->
+ <div class="navbar">
+  
+  <a class="active" href="index.html">HOME</a>
+  <div class="dropdown">
+    <button class="dropbtn">ABOUT US 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Message from the principal</a>
+      <a href="#">school statements</a>
+      <a href="contact us.html">Contact Us</a>
+      <a href="#">Staff</a>
+    </div>
+  </div> 
+            <a href="schools.html">COURSES & FEES STCT</a>
+            <div class="dropdown">
+              <button class="dropbtn">ACADEMICS 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="Academics.html">Academics Affairs</a>
+                <a href="admission.html">Admissions</a>
+                 
+                
+              </div>
+            </div>
+           
+          
+          
+            <div class="dropdown">
+              <button class="dropbtn">DEPTS 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="technical.html">Technical Dept</a>
+                <a href="business.html">Business Dept</a>
+                  <a href="gallery.html">Sports & Games</a>
+                
+              </div>
+            </div>
+           
+            <div class="dropdown">
+              <button class="dropbtn">STUDENT AFFAIRS 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="conduct.html">Code Of Conduct</a>
+                <a href="#">  Spiritual Life</a>
+                <a href="#">Student Guild & Clubs</a>
+           
+              </div>
+            </div>
+           
+            <div class="dropdown">
+              <button class="dropbtn">PROJECTS 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Student Projects</a>
+                <a href="#">School Projects</a>
+                  <a href="#">Community projects</a>
+                
+              </div>
+            </div>
+</div>
+<!-- end navigation -->
+  
+    
+
+
+    <!-- MAIN (Center website) -->
+
+
+    <h2>BUSINESS DEPARTMENT</h2>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> information & Technology</button>
+  <button class="btn" onclick="filterSelection('cars')"> Catering</button>
+  <button class="btn" onclick="filterSelection('people')"> Hair Dressing</button>
+  <button class="btn" onclick="filterSelection('#')"> Accounting</button>
+  <button class="btn" onclick="filterSelection('#')"> Secretarial</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="images/web.png" alt="Mountains" style="width:100%">
+      <h4>information & Technology</h4>
+      <p>Web development</p>
+    </div>
+  </div>
+
+  <div class="column nature">
+    <div class="content">
+      <img src="images/graphic.jpg" alt="Lights" style="width:100%">
+      <h4>information & Technology</h4>
+      <p>photo editing and graphics</p>
+    </div>
+  </div>
+
+  
+  <div class="column nature">
+    <div class="content">
+      <img src="images/cop.jpeg" alt="Nature" style="width:100%">
+      <h4>information & Technology</h4>
+      <p>computer Repair and maintanance</p>
+    </div>
+  </div>
+
+  <div class="column cars">
+    <div class="content">
+      <img src="images/8.jpg" alt="Car" style="width:100%">
+      <h4>Catering</h4>
+      <p>Prepare Baking Pans. .</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <img src="images/ban 6.webp" alt="Car" style="width:100%">
+      <h4>Hoter management</h4>
+      <p> Allow Ingredients to settle</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <img src="images/8.jpg" alt="Car" style="width:100%">
+      <h4>Baking</h4>
+      <p> Stir Together Dry Ingredients..</p>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img src="images/h2.jpeg" alt="People" style="width:100%">
+      <h4>weedind</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="images/h1.jpg" alt="People" style="width:100%">
+      <h4>New</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="images/ha.jpg" alt="People" style="width:100%">
+      <h4>Young</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+    
+</body>
+</html>
